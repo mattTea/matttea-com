@@ -1,0 +1,238 @@
+.proj-container {
+  /*margin-bottom: 2.5em;*/
+  /*margin-top: 1.5em;*/
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.proj-thumb img {
+    float: left;
+    width: 30%;
+    height: 30%;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 120px;
+    max-width: 120px;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+.proj-content {
+    font-size: 16px;
+    overflow: auto;
+}
+
+#headline {
+    padding: 20px 5%;
+    color: white;
+    font-family: Questrial;
+    background-image: url(blog-banner.jpg);
+    background-size: cover;
+    text-align:center;
+}
+
+#blurb {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#blog-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90%;
+    margin: 20px auto;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px
+}
+
+#blog-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Questrial;
+    font-size: 18px;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    font-family: Questrial;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+a {text-decoration: none; }
+
+#comments {
+    font-size: 15px;
+}
+
+#index {
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: DarkSlateGrey;
+    font-size: 15px;
+}
+
+#index tr:hover {
+    color: #784300;
+    font-weight: bold;
+}
+
+#menu span:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    /* add style required over 344px width */
+    #menu { /* menu is the burger image */
+        display: none;
+    }
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* add style required under 600px width */
+    #blog-content {
+        font-size: 15px;
+    }
+    #index {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #comments {
+        font-size: 13px;
+    }
+    #navbar.js {
+        display: none;
+    }
+    #navbar {
+        font-size: 15px;
+        position: fixed;
+        margin-top: -7px;
+        width: 100%;
+        background-color: white;
+    }
+    #menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
+}
+
+@media (max-width: 343px) {
+    /* add style required under 343px width */
+    h4 {
+      font-size: 11px;
+    }
+    p {
+      font-size: 10px;
+    }
+    .proj-thumb img {
+      min-width: 60px;
+      min-height: 60px;
+    }
+    .project-content {
+      margin-left: 100px;
+    }
+    #blog-content {
+        font-size: 12px;
+    }
+    #index {
+        font-size: 12px;
+    }
+    #author-blurb {
+        font-size: 12px;
+    }
+    #comments {
+        font-size: 12px;
+    }
+}
+
+.main {
+    margin-top: 30px;
+}
+
+.container {
+    margin: auto;
+    max-width: 650px;
+    padding: 20px 5%;
+}
+
+#authorImg {
+    display: block;
+    width: 30%;
+    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-radius: 50% 50%;
+    /*box-shadow: black 0px 0px 5px;*/
+
+}
+
+#footer {
+    padding: 0.8em;
+    color: white;
+    font-family: Questrial;
+    font-weight: bold;
+    background-image: url(blog-footer.jpg);
+    background-size: cover;
+}
+
+
+
+
+/* ALL FOLLOWING NEEDED FOR NAVBAR! */
+html,body{font-family:Questrial;font-size:18px;line-height:1.5}html{overflow-x:hidden}
+img{margin-bottom:-5px}a{color:inherit}
+
+.w3-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.w3-navbar li{float:left}.w3-navbar li a,.w3-navitem,.w3-navbar li .w3-btn,.w3-navbar li .w3-input{display:block;padding:8px 16px}.w3-navbar li .w3-btn,.w3-navbar li .w3-input{border:none;outline:none;width:100%}
+.w3-navbar li a:hover{color:black;background-color:#ffefda}
+.w3-navbar .w3-dropdown-hover,.w3-navbar .w3-dropdown-click{position:static}
+.w3-navbar .w3-dropdown-hover:hover,.w3-navbar .w3-dropdown-hover:first-child,.w3-navbar .w3-dropdown-click:hover{background-color:#ccc;color:#000}
+.w3-navbar a,.w3-topnav a,.w3-sidenav a,.w3-dropdown-content a,.w3-accordion-content a,.w3-dropnav a,.w3-navblock a{text-decoration:none!important}
+.w3-navbar .w3-opennav.w3-right{float:right!important}.w3-topnav{padding:8px 8px}
+
+/* next bit includes <343px break point to vertical list */
+.w3-layout-container,.w3-cell-row{display:table;width:100%}.w3-layout-row{display:table-row}.w3-layout-cell,.w3-layout-col,.w3-cell{display:table-cell}
+.w3-layout-top,.w3-cell-top{vertical-align:top}.w3-layout-middle,.w3-cell-middle{vertical-align:middle}.w3-layout-bottom,.w3-cell-bottom{vertical-align:bottom}
+.w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
+@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+
+
+/* makes navbar drop to a list in a narrow viewport */
+.w3-topnav a{display:block}.w3-navbar li:not(.w3-opennav){float:none;width:100%!important}.w3-navbar li.w3-right{float:none!important}
+
+/* algns text left when in narrow viewport */
+.w3-topnav,.w3-navbar{text-align:left}.w3-hide-small{display:none!important}.w3-layout-col,.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+
+/* makes background black in narrow viewport */
+.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
+
+/* makes background black all the time */
+/*.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}*/
+
+/* changed above commented out line to the below so menu is white background and brown text */
+.w3-black,.w3-hover-black:hover{color:#784300!important;background-color:#fff!important}
